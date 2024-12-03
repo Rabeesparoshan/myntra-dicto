@@ -1,0 +1,150 @@
+/* Footer.css */
+
+/* General Footer Styles */
+.footer {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 40px 0;
+  }
+  
+  .footer h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .footer ul li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Top Section */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 30%;
+  }
+  
+  .footer-left ul,
+  .footer-middle ul,
+  .footer-right ul {
+    padding-left: 20px;
+  }
+  
+  .footer-left h2,
+  .footer-middle h2,
+  .footer-right h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .footer-left ul li,
+  .footer-middle ul li,
+  .footer-right ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  /* Footer Banner */
+  .footer-banner {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .footer-banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer Additional Content - Centered */
+  .footer-additional-content {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%; /* Adjust width for a nice center */
+    max-width: 1000px; /* Maximum width for larger screens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+  }
+  
+  .footer-additional-content h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .footer-additional-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-additional-content {
+      width: 90%; /* Make it slightly wider on smaller screens */
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer h2 {
+      font-size: 16px;
+    }
+  
+    .footer ul li {
+      font-size: 12px;
+    }
+  
+    .footer-additional-content p {
+      font-size: 12px;
+    }
+  
+    .footer-bottom {
+      font-size: 10px;
+    }
+  }
+  

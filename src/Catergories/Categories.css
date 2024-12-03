@@ -1,0 +1,68 @@
+.cont {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+.img1 {
+  width: calc(100% - 30px);
+  padding-left: 15px;
+}
+.img2, .img3 {
+  width: 100%;
+}
+.winter {
+  display: grid;
+  place-content: center;
+}
+.get-win {
+  font-size: 30px;
+  font-weight: 200000;
+}
+.bundle {
+  text-align: center;
+  color: grey;
+}
+.slide-img {
+  width: 100%;
+}
+.slide-cont {
+  display: flex;
+  overflow: hidden;
+  height: 241px;
+  position: relative;
+}
+.extra {
+  display: flex;
+  height: 241px;
+  position: relative;
+  left: var(--offset);
+  transition: 1000ms;
+  display: flex;
+  animation: slider5 ;
+}
+@keyframes slider5 {
+  0% {
+    --offset: 0%;
+  }
+}
+.dots-cont {
+  height: 50px;
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: lightgray;
+}
+.dot:hover:not(.dot-active) {
+  background-color: pink;
+}
+.dot-active {
+  background-color: gray;
+}

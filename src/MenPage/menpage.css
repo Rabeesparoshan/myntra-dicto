@@ -1,0 +1,9 @@
+.menspage{
+    display: flex;           /* Arrange items in a row */
+  flex-wrap: wrap;         /* Wrap to the next line if necessary */
+  gap: 16px;               /* Add space between items */
+  justify-content: flex-start; /* Align items to the start */
+  padding: 16px;  
+  display: grid;  
+  grid-template-columns: repeat(6,1fr);  
+}

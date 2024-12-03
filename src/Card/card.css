@@ -1,0 +1,93 @@
+.card {
+    width:194px;
+    height: 280px;
+    margin: 10px;
+    display: grid;
+    box-shadow: 0px 0px 2px;
+    background-color: white;
+}
+
+.img {
+    
+    height: 220px;
+    width:190px;
+    ;
+}
+.img-cont {
+    position: relative;
+}
+.W-btn {
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 13.5px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+}
+.W-btn:not(.wish-active)::after {
+    content: '♡';
+    color: black;
+    font-weight: 900;
+    font-size: 21px;
+}
+.wish-active::after {
+    content: '❤️';
+    color: red;
+    font-weight: 900;
+    font-size: 21px;
+}
+.dets-cont {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    
+}
+.third-sec, .p {
+    width: 100%;
+    display: flex;
+    /* place-items: center; */
+}
+.p {
+    font-weight: 800;
+    text-align: center;
+    color: rgb(29, 29, 29);
+    text-shadow: 0px 0px 0.5px;
+    place-content: center;
+
+}
+.btnC {
+    height: 25px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-radius: 2.5px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    transition: 50ms;
+    cursor: pointer;
+}
+.btnC:hover {
+    background-color: rgb(232 232 232);
+}
+.wishlist-button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #ccc; /* Default gray background */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wishlist-button.active {
+    background-color: red; /* Turns red when clicked */
+  }
+  
